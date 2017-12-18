@@ -1,0 +1,41 @@
+.shrinking-header {
+    min-height: 300px;
+    justify-content: center;
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+.cs-spacer {
+    flex: 1 1 auto;
+}
+
+.cs-icon {
+    padding: 0 14px;
+}
+
+.fixed-header {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: #3f51b5;
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+    background: #252830;
+    height: 64px; // margin-left: 40px;
+}
+
+.cs-title {
+    transition: opacity .35s ease-in-out;
+    opacity: 0;
+    &.showTitle {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,19 @@
+<mat-sidenav-container class="st-container">
+    <mat-sidenav #sidenav mode="side" position="end">Sidenav content</mat-sidenav>
+    <mat-sidenav #modenav>Sidenav content</mat-sidenav>
+    <mat-sidenav-content >
+        <header>
+            <app-header [displayTitle]="displayTitle" [title]="title"></app-header>
+            <app-shrinking-header (collapsed)="displayTitle=$event" [headerHeight]="200">
+                <h2 [class.hideTitle]="displayTitle">{{ title }}</h2>
+            </app-shrinking-header>
+        </header>
+        <div class="st-content" style="height:200vh;" >
+            <!-- <router-outlet></router-outlet> -->
+        </div>
+        <footer>
+            <!-- footer component -->
+        </footer>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
